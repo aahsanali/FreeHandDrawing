@@ -12,8 +12,10 @@
 
 @implementation TwoLinearInterpView
 {
-    UIBezierPath *path1; // (3)
-    UIBezierPath *path2; // (3)
+    
+    NSMutableArray *aTouches;
+    NSMutableArray *paths;
+    
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder // (1)
@@ -26,12 +28,6 @@
         aTouches = [NSMutableArray array];
         paths = [NSMutableArray array];
         
-        path1 = [UIBezierPath bezierPath];
-        [path1 setLineWidth:2.0];
-        
-        path2 = [UIBezierPath bezierPath];
-        [path2 setLineWidth:2.0];
-
     }
     return self;
 }
@@ -44,11 +40,6 @@
         [p removeAllPoints];
         [self setNeedsDisplay];
     }
-    return;
-    [path1 removeAllPoints];
-    [path2 removeAllPoints];
-    
-    [self setNeedsDisplay];
 }
 
 
@@ -62,14 +53,6 @@
         [p stroke];
     }
     
-    return;
-    
-    [[UIColor blackColor] setStroke];
-    [path1 stroke];
-    
-    [[UIColor redColor] setStroke];
-    [path2 stroke];
-
     
 }
 
@@ -91,8 +74,6 @@
     NSArray *allTouches = [[event.allTouches allObjects] sortedArrayUsingSelector:@selector(compareAddress:)];
     
     NSLog(@"B[%d][%d]",[touches count],[allTouches count]);
-
-   
     
     for (UITouch *t in allTouches) {
         UIBezierPath *p = [UIBezierPath bezierPath];
@@ -102,26 +83,6 @@
         [self movePath:p toTouch:t];
     }
 
-    
-    return;
-    
-    switch ([allTouches count]) {
-        case 1:
-            [self movePath:path1 toTouch:allTouches[0]];
-            break;
-        case 2:{
-            one = allTouches[0];
-            two = allTouches[1];
-            
-            
-            [self movePath:path1 toTouch:allTouches[0]];
-            [self movePath:path2 toTouch:allTouches[1]];
-            break;
-        }
-        default:
-            break;
-    }
-    
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
@@ -141,29 +102,6 @@
         }
     }
     
-    return;
-    switch ([allTouches count]) {
-        case 1: {
-            if (one == allTouches[0]) {
-                [self addLinetoPath:path1 atTouch:allTouches[0]];
-            } else {
-                [self addLinetoPath:path2 atTouch:allTouches[0]];
-            }
-        }
-            break;
-        case 2:{
-            [self addLinetoPath:path1 atTouch:allTouches[0]];
-            [self addLinetoPath:path2 atTouch:allTouches[1]];
-            break;
-        }
-        default:
-            break;
-    }
-
-//    UITouch *touch = [touches anyObject];
-//    CGPoint p = [touch locationInView:self];
-//    [path1 addLineToPoint:p]; // (4)
-//    [self setNeedsDisplay];
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event

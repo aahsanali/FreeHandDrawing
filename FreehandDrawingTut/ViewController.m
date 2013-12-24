@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "TwoLinearInterpView.h"
+#import "MultiLineCachedLIView.h"
 
 @interface ViewController ()
 
@@ -33,7 +33,7 @@
 }
 - (IBAction)erase:(id)sender {
     
-    [(TwoLinearInterpView *)self.view eraseDrawing];
+    [(MultiLineCachedLIView *)self.view eraseDrawing];
 }
 
 @end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		785483941862C7B300C747B5 /* LinearInterpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 785483931862C7B300C747B5 /* LinearInterpView.m */; };
+		785483971862F82100C747B5 /* CachedLIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 785483961862F82100C747B5 /* CachedLIView.m */; };
 		78C6D43518618990003BC290 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C6D43318618990003BC290 /* SecondViewController.m */; };
 		78C6D43618618990003BC290 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78C6D43418618990003BC290 /* SecondViewController.xib */; };
 		78C6D4391861BED2003BC290 /* TwoLinearInterpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C6D4381861BED2003BC290 /* TwoLinearInterpView.m */; };
@@ -20,7 +21,7 @@
 		A2BE01B21626FBCC001C3A35 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BE01B11626FBCC001C3A35 /* ViewController.m */; };
 		A2BE01B51626FBCC001C3A35 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2BE01B31626FBCC001C3A35 /* ViewController.xib */; };
 		A2BE01BD162705FC001C3A35 /* MultiLinearInterpView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BE01BC162705FC001C3A35 /* MultiLinearInterpView.m */; };
-		A2BE01C016282975001C3A35 /* CachedLIView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BE01BF16282975001C3A35 /* CachedLIView.m */; };
+		A2BE01C016282975001C3A35 /* MultiLineCachedLIView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BE01BF16282975001C3A35 /* MultiLineCachedLIView.m */; };
 		A2BE01C416283A34001C3A35 /* BezierInterpView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BE01C316283A34001C3A35 /* BezierInterpView.m */; };
 		A2BE01C916284C95001C3A35 /* SmoothedBIView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BE01C816284C95001C3A35 /* SmoothedBIView.m */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,8 @@
 /* Begin PBXFileReference section */
 		785483921862C7B300C747B5 /* LinearInterpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinearInterpView.h; sourceTree = "<group>"; };
 		785483931862C7B300C747B5 /* LinearInterpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinearInterpView.m; sourceTree = "<group>"; };
+		785483951862F82100C747B5 /* CachedLIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CachedLIView.h; sourceTree = "<group>"; };
+		785483961862F82100C747B5 /* CachedLIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CachedLIView.m; sourceTree = "<group>"; };
 		78C6D43218618990003BC290 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		78C6D43318618990003BC290 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		78C6D43418618990003BC290 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
@@ -48,8 +51,8 @@
 		A2BE01B41626FBCC001C3A35 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		A2BE01BB162705FC001C3A35 /* MultiLinearInterpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiLinearInterpView.h; sourceTree = "<group>"; };
 		A2BE01BC162705FC001C3A35 /* MultiLinearInterpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiLinearInterpView.m; sourceTree = "<group>"; };
-		A2BE01BE16282975001C3A35 /* CachedLIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CachedLIView.h; sourceTree = "<group>"; };
-		A2BE01BF16282975001C3A35 /* CachedLIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CachedLIView.m; sourceTree = "<group>"; };
+		A2BE01BE16282975001C3A35 /* MultiLineCachedLIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiLineCachedLIView.h; sourceTree = "<group>"; };
+		A2BE01BF16282975001C3A35 /* MultiLineCachedLIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiLineCachedLIView.m; sourceTree = "<group>"; };
 		A2BE01C216283A34001C3A35 /* BezierInterpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierInterpView.h; sourceTree = "<group>"; };
 		A2BE01C316283A34001C3A35 /* BezierInterpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierInterpView.m; sourceTree = "<group>"; };
 		A2BE01C716284C95001C3A35 /* SmoothedBIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmoothedBIView.h; sourceTree = "<group>"; };
@@ -128,8 +131,10 @@
 		A2BE01C116283963001C3A35 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A2BE01BE16282975001C3A35 /* CachedLIView.h */,
-				A2BE01BF16282975001C3A35 /* CachedLIView.m */,
+				785483951862F82100C747B5 /* CachedLIView.h */,
+				785483961862F82100C747B5 /* CachedLIView.m */,
+				A2BE01BE16282975001C3A35 /* MultiLineCachedLIView.h */,
+				A2BE01BF16282975001C3A35 /* MultiLineCachedLIView.m */,
 				A2BE01C716284C95001C3A35 /* SmoothedBIView.h */,
 				A2BE01C816284C95001C3A35 /* SmoothedBIView.m */,
 				A2BE01C216283A34001C3A35 /* BezierInterpView.h */,
@@ -214,7 +219,8 @@
 				A2BE01BD162705FC001C3A35 /* MultiLinearInterpView.m in Sources */,
 				785483941862C7B300C747B5 /* LinearInterpView.m in Sources */,
 				78C6D43518618990003BC290 /* SecondViewController.m in Sources */,
-				A2BE01C016282975001C3A35 /* CachedLIView.m in Sources */,
+				785483971862F82100C747B5 /* CachedLIView.m in Sources */,
+				A2BE01C016282975001C3A35 /* MultiLineCachedLIView.m in Sources */,
 				A2BE01C416283A34001C3A35 /* BezierInterpView.m in Sources */,
 				A2BE01C916284C95001C3A35 /* SmoothedBIView.m in Sources */,
 			);
